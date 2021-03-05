@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="assets/libs/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="assets/fonts/feather/feather.css">
+
+    <!-- Map -->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+
+    <!-- 
+      Theme Sans Serif CSS
+      Remove the "disabled" attribute if you want to enable Sans Serif for headings.
+    -->
+    <link rel="stylesheet" href="assets/css/theme-sans-serif.min.css" id="themeSansSerif" disabled>
+
+    <!--
+      Demo JS
+      Remove the code below on a production website.
+    -->
+    <script src="assets/js/demo.min.js"></script>
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+
+    <title>Influencia</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156446909-3"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "UA-156446909-3");</script>
+
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-lg">
+
+        <!-- Brand -->
+        <a class="navbar-brand d-lg-none" href="index.html">Infleuncia</a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!-- Navigation -->
+          <ul class="navbar-nav justify-content-end w-100">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="landingsDropdown" href="index.html#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Qui sommes nous ?
+              </a>
+          </ul>
+
+          <!-- Brand -->
+          <a class="navbar-brand d-none d-lg-block px-lg-6" href="index.html">Influencia</a>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav justify-content-start w-100">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="accountDropdown" href="index.html#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Télécharger
+              </a>
+            </li>
+           
+            <li class="nav-item d-lg-none">
+              <div class="nav-link">
+
+                <!-- Text -->
+                <span>
+                  Sans Serif Headers
+                </span>
+
+                <!-- Switch -->
+                <form class="ml-auto mr-n3">
+                  <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input family-switch" id="familySwitchMobile" onchange="switchFamily(this.checked)">
+                    <label class="custom-control-label" for="familySwitchMobile"></label>
+                  </div>
+                </form>
+
+              </div>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
+
+
+    <!-- WELCOME -->
+    <section class="pt-6 pt-md-11 pb-8 pb-md-9">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-12 col-xl-10 text-center">
+
+            <!-- Heading -->
+            <h1 class="display-2 mb-4" >
+              Devenez votre propre agent
+            </h1>
+
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6 text-center">
+
+            <!-- Text -->
+            <p class="lead text-muted" id="Sous-titre">
+              Prenez en main votre compte Instagram professionnel et gérez vos campagnes avec Inflencia.
+            </p>
+
+            <!-- Buttons -->
+            <a class="btn btn-primary lift" href="Lien_redirection.html" target="_blank">
+              Essayer
+            </a>
+            <a class="btn btn-white lift ml-3" href="Lien_redirection.html">
+              <span class="d-sm-none">Docs</span><span class="d-none d-sm-inline-block">En savoir plus</span>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-fluid-x shape-bottom text-white pb-18">
+        <div class="shape-img pb-9 pb-md-15">
+          <svg viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M0 0h100v25H75L25 50H0z" fill="currentColor"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- TASKS -->
+    <section class="pt-10 pt-md-12 bg-dark">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Decoration -->
+            <div class="position-absolute top-center top-md-left text-warning mt-n8 ml-md-n8">
+              <svg width="185" height="186" viewBox="0 0 185 186" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="currentColor"/><circle cx="22" cy="2" r="2" fill="currentColor"/><circle cx="42" cy="2" r="2" fill="currentColor"/><circle cx="62" cy="2" r="2" fill="currentColor"/><circle cx="82" cy="2" r="2" fill="currentColor"/><circle cx="102" cy="2" r="2" fill="currentColor"/><circle cx="122" cy="2" r="2" fill="currentColor"/><circle cx="142" cy="2" r="2" fill="currentColor"/><circle cx="162" cy="2" r="2" fill="currentColor"/><circle cx="182" cy="2" r="2" fill="currentColor"/><circle cx="2" cy="22" r="2" fill="currentColor"/><circle cx="22" cy="22" r="2" fill="currentColor"/><circle cx="42" cy="22" r="2" fill="currentColor"/><circle cx="62" cy="22" r="2" fill="currentColor"/><circle cx="82" cy="22" r="2" fill="currentColor"/><circle cx="102" cy="22" r="2" fill="currentColor"/><circle cx="122" cy="22" r="2" fill="currentColor"/><circle cx="142" cy="22" r="2" fill="currentColor"/><circle cx="162" cy="22" r="2" fill="currentColor"/><circle cx="182" cy="22" r="2" fill="currentColor"/><circle cx="2" cy="42" r="2" fill="currentColor"/><circle cx="22" cy="42" r="2" fill="currentColor"/><circle cx="42" cy="42" r="2" fill="currentColor"/><circle cx="62" cy="42" r="2" fill="currentColor"/><circle cx="82" cy="42" r="2" fill="currentColor"/><circle cx="102" cy="42" r="2" fill="currentColor"/><circle cx="122" cy="42" r="2" fill="currentColor"/><circle cx="142" cy="42" r="2" fill="currentColor"/><circle cx="162" cy="42" r="2" fill="currentColor"/><circle cx="182" cy="42" r="2" fill="currentColor"/><circle cx="2" cy="62" r="2" fill="currentColor"/><circle cx="22" cy="62" r="2" fill="currentColor"/><circle cx="42" cy="62" r="2" fill="currentColor"/><circle cx="62" cy="62" r="2" fill="currentColor"/><circle cx="82" cy="62" r="2" fill="currentColor"/><circle cx="102" cy="62" r="2" fill="currentColor"/><circle cx="122" cy="62" r="2" fill="currentColor"/><circle cx="142" cy="62" r="2" fill="currentColor"/><circle cx="162" cy="62" r="2" fill="currentColor"/><circle cx="182" cy="62" r="2" fill="currentColor"/><circle cx="2" cy="82" r="2" fill="currentColor"/><circle cx="22" cy="82" r="2" fill="currentColor"/><circle cx="42" cy="82" r="2" fill="currentColor"/><circle cx="62" cy="82" r="2" fill="currentColor"/><circle cx="82" cy="82" r="2" fill="currentColor"/><circle cx="102" cy="82" r="2" fill="currentColor"/><circle cx="122" cy="82" r="2" fill="currentColor"/><circle cx="142" cy="82" r="2" fill="currentColor"/><circle cx="162" cy="82" r="2" fill="currentColor"/><circle cx="182" cy="82" r="2" fill="currentColor"/><circle cx="2" cy="102" r="2" fill="currentColor"/><circle cx="22" cy="102" r="2" fill="currentColor"/><circle cx="42" cy="102" r="2" fill="currentColor"/><circle cx="62" cy="102" r="2" fill="currentColor"/><circle cx="82" cy="102" r="2" fill="currentColor"/><circle cx="102" cy="102" r="2" fill="currentColor"/><circle cx="122" cy="102" r="2" fill="currentColor"/><circle cx="142" cy="102" r="2" fill="currentColor"/><circle cx="162" cy="102" r="2" fill="currentColor"/><circle cx="182" cy="102" r="2" fill="currentColor"/><circle cx="2" cy="122" r="2" fill="currentColor"/><circle cx="22" cy="122" r="2" fill="currentColor"/><circle cx="42" cy="122" r="2" fill="currentColor"/><circle cx="62" cy="122" r="2" fill="currentColor"/><circle cx="82" cy="122" r="2" fill="currentColor"/><circle cx="102" cy="122" r="2" fill="currentColor"/><circle cx="122" cy="122" r="2" fill="currentColor"/><circle cx="142" cy="122" r="2" fill="currentColor"/><circle cx="162" cy="122" r="2" fill="currentColor"/><circle cx="182" cy="122" r="2" fill="currentColor"/><circle cx="2" cy="142" r="2" fill="currentColor"/><circle cx="22" cy="142" r="2" fill="currentColor"/><circle cx="42" cy="142" r="2" fill="currentColor"/><circle cx="62" cy="142" r="2" fill="currentColor"/><circle cx="82" cy="142" r="2" fill="currentColor"/><circle cx="102" cy="142" r="2" fill="currentColor"/><circle cx="122" cy="142" r="2" fill="currentColor"/><circle cx="142" cy="142" r="2" fill="currentColor"/><circle cx="162" cy="142" r="2" fill="currentColor"/><circle cx="182" cy="142" r="2" fill="currentColor"/><circle cx="2" cy="162" r="2" fill="currentColor"/><circle cx="22" cy="162" r="2" fill="currentColor"/><circle cx="42" cy="162" r="2" fill="currentColor"/><circle cx="62" cy="162" r="2" fill="currentColor"/><circle cx="82" cy="162" r="2" fill="currentColor"/><circle cx="102" cy="162" r="2" fill="currentColor"/><circle cx="122" cy="162" r="2" fill="currentColor"/><circle cx="142" cy="162" r="2" fill="currentColor"/><circle cx="162" cy="162" r="2" fill="currentColor"/><circle cx="182" cy="162" r="2" fill="currentColor"/><circle cx="2" cy="182" r="2" fill="currentColor"/><circle cx="22" cy="182" r="2" fill="currentColor"/><circle cx="42" cy="182" r="2" fill="currentColor"/><circle cx="62" cy="182" r="2" fill="currentColor"/><circle cx="82" cy="182" r="2" fill="currentColor"/><circle cx="102" cy="182" r="2" fill="currentColor"/><circle cx="122" cy="182" r="2" fill="currentColor"/><circle cx="142" cy="182" r="2" fill="currentColor"/><circle cx="162" cy="182" r="2" fill="currentColor"/><circle cx="182" cy="182" r="2" fill="currentColor"/></svg>
+            </div>
+
+            <!-- Stack -->
+            <div class="card-stack">
+
+              <!-- Card -->
+              <div class="card-stack-item mb-9">
+                <div class="card card-lg rounded overflow-hidden">
+                  <div class="row no-gutters">
+                    <div class="col-md order-md-1 d-flex align-items-end bg-primary">
+
+                      <!-- Image -->
+                      <a href="lie">
+                        <img class="card-img-top" src="assets/img/screenshots/ui-elements/Femme_Ordi.png" alt="...">
+                      </a>
+
+                    </div>
+                    <div class="col-md-5 order-md-0 d-flex align-items-center bg-white">
+                      <div class="card-body text-center">
+
+                        <!-- Icon -->
+                        <div class="icon text-primary-light mx-auto mb-4">
+                          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2z" fill="#335EEA" opacity=".3"/><path d="M18.5 11h-13A1.5 1.5 0 004 12.5v.5h4.586a1 1 0 01.707.293l1 1a2.414 2.414 0 003.414 0l1-1a1 1 0 01.707-.293H20v-.5a1.5 1.5 0 00-1.5-1.5zM5.5 6A1.5 1.5 0 004 7.5V8h16v-.5A1.5 1.5 0 0018.5 6h-13z" fill="#335EEA"/></g></svg>
+                        </div>
+
+                        <!-- Heading -->
+                        <h1 class="font-family-sans-serif mb-4 mt-auto">
+                          Gérez votre agenda
+                        </h1>
+
+                        <!-- Text -->
+                        <p id="Texte-explicatif">
+                          Choissiez votre rythme de publication. <br> Infleuncia actualisera votre calendrier automatiquement.
+                        </p>
+
+                        <!-- Link -->
+                        <a class="h6 text-uppercase text-decoration-none mt-auto" href="Lien_redirection.html">
+                          Essayez gratuitement <i class="fe fe-arrow-right"></i>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="card-stack-item mb-9">
+                <div class="card card-lg rounded overflow-hidden">
+                  <div class="row no-gutters">
+                    <div class="col-md order-md-1 d-flex align-items-end bg-primary">
+
+                      <!-- Image -->
+                      <a href="Lien_redirection.html">
+                        <img class="card-img-top" src="assets/img/screenshots/ui-elements/Femme_Maquillage.png" alt="...">
+                      </a>
+
+                    </div>
+                    <div class="col-md-5 order-md-0 d-flex align-items-center bg-white">
+                      <div class="card-body text-center">
+
+                        <!-- Icon -->
+                        <div class="icon text-primary-light mx-auto mb-4">
+                          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M8 7a1 1 0 110-2h8a4 4 0 110 8H8a2 2 0 100 4h9a1 1 0 010 2H8a4 4 0 110-8h8a2 2 0 100-4H8z" fill="#335EEA" opacity=".3"/><path d="M9.707 8.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 1.414L7.414 6l2.293 2.293zM14.293 20.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 00-1.414 1.414L16.586 18l-2.293 2.293z" fill="#335EEA"/></g></svg>
+                        </div>
+
+                        <!-- Heading -->
+                        <h1 class="font-family-sans-serif mb-4 mt-auto">
+                          Gestion des campagnes d'influence
+                        </h1>
+
+                        <!-- Text -->
+                        <p>
+                          Laissez Influencia s'occuper de la paperasse et concentrez-vous sur ce que vous faites de mieux.
+                        </p>
+
+                        <!-- Link -->
+                        <a class="h6 text-uppercase text-decoration-none mt-auto" href="Lien_redirection.html">
+                          View Landing <i class="fe fe-arrow-right"></i>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="card-stack-item mb-9">
+                <div class="card card-lg rounded overflow-hidden">
+                  <div class="row no-gutters">
+                    <div class="col-md order-md-1 d-flex align-items-end bg-primary">
+
+                      <!-- Image -->
+                      <a href="Lien_redirection.html">
+                        <img class="card-img-top" src="assets/img/screenshots/ui-elements/Femme_Bureau.png" alt="...">
+                      </a>
+
+                    </div>
+                    <div class="col-md-5 order-md-0 d-flex align-items-center bg-white">
+                      <div class="card-body text-center">
+
+                          <!-- Icon -->
+                          <div class="icon text-primary-light mx-auto mb-4">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M4.002 12.2L13 14V4.062A8.001 8.001 0 0112 20a8 8 0 01-7.998-7.8z" fill="#335EEA" opacity=".3"/><path d="M3.06 10.012A8.001 8.001 0 0111 3v8.6l-7.94-1.588z" fill="#335EEA"/></g></svg>
+                          </div>
+
+                        <!-- Heading -->
+                        <h1 class="font-family-sans-serif mb-4 mt-auto">
+                          Statistiques
+                        </h1>
+
+                        <!-- Text -->
+                        <p>
+                          Exportez de manière professionnelles vos les statistiques de publications et partagez les facilement avec vos annonceurs.
+                        </p>
+
+                        <!-- Link -->
+                        <a class="h6 text-uppercase text-decoration-none mt-auto" href="Lien_redirection.html">
+                          Essayez gratuitement<i class="fe fe-arrow-right"></i>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="card-stack-item mb-9">
+                <div class="card card-lg rounded overflow-hidden">
+                  <div class="row no-gutters">
+                    <div class="col-md order-md-1 d-flex align-items-end bg-primary">
+
+                      <!-- Image -->
+                      <a href="Lien_redirection.html">
+                        <img class="card-img-top" src="assets/img/screenshots/ui-elements/Homme_ordi.png" alt="...">
+                      </a>
+
+                    </div>
+                    <div class="col-md-5 order-md-0 d-flex align-items-center bg-white">
+                      <div class="card-body text-center">
+
+                        <!-- Icon -->
+                        <div class="icon text-primary-light mx-auto mb-4">
+                          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M7.139 4v15h9.722V4H7.14zm.694-3h8.334c1.406 0 2.083.981 2.083 2.5v17c0 1.519-.677 2.5-2.083 2.5H7.833c-1.406 0-2.083-.981-2.083-2.5v-17c0-1.519.677-2.5 2.083-2.5z" fill="#335EEA"/><path fill="#335EEA" opacity=".3" d="M7 4v15h10V4z"/><circle fill="#335EEA" cx="12" cy="21" r="1"/></g></svg>
+                        </div>
+
+                        <!-- Heading -->
+                        <h1 class="font-family-sans-serif mb-4 mt-auto">
+                          Preview et Plannification
+                        </h1>
+
+                        <!-- Text -->
+                        <p>
+                          Accédez à des outils performants pour plannifier vos Publications.<br> Prévisualisez vos publications dans votre fil Instagram grave a l'option Preview.
+                        </p>
+
+                        <!-- Link -->
+                        <a class="h6 text-uppercase text-decoration-none mt-auto" href="Lien_redirection.html">
+                          Essayez gratuitement <i class="fe fe-arrow-right"></i>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+      </div>
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-fluid-x shape-bottom text-dark">
+        <div class="shape-img pb-8 pb-md-11">
+          <svg viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M0 0h100v50H75L25 25H0z" fill="currentColor"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="bg-light pt-12 pt-md-16">
+      <div class="container-lg">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-5">
+
+            <!-- Card -->
+            <div class="position-relative">
+
+              <!-- Decoration -->
+              <div class="position-absolute top-center top-md-left text-warning mt-n9 ml-md-n9">
+                <svg width="278" height="278" viewBox="0 0 278 278" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M3 0h2v8H3z"/><path fill="currentColor" d="M0 3h8v2H0zM33 0h2v8h-2z"/><path fill="currentColor" d="M30 3h8v2h-8zM63 0h2v8h-2z"/><path fill="currentColor" d="M60 3h8v2h-8zM93 0h2v8h-2z"/><path fill="currentColor" d="M90 3h8v2h-8zM123 0h2v8h-2z"/><path fill="currentColor" d="M120 3h8v2h-8zM153 0h2v8h-2z"/><path fill="currentColor" d="M150 3h8v2h-8zM183 0h2v8h-2z"/><path fill="currentColor" d="M180 3h8v2h-8zM213 0h2v8h-2z"/><path fill="currentColor" d="M210 3h8v2h-8zM243 0h2v8h-2z"/><path fill="currentColor" d="M240 3h8v2h-8zM273 0h2v8h-2z"/><path fill="currentColor" d="M270 3h8v2h-8zM3 30h2v8H3z"/><path fill="currentColor" d="M0 33h8v2H0zM33 30h2v8h-2z"/><path fill="currentColor" d="M30 33h8v2h-8zM63 30h2v8h-2z"/><path fill="currentColor" d="M60 33h8v2h-8zM93 30h2v8h-2z"/><path fill="currentColor" d="M90 33h8v2h-8zM123 30h2v8h-2z"/><path fill="currentColor" d="M120 33h8v2h-8zM153 30h2v8h-2z"/><path fill="currentColor" d="M150 33h8v2h-8zM183 30h2v8h-2z"/><path fill="currentColor" d="M180 33h8v2h-8zM213 30h2v8h-2z"/><path fill="currentColor" d="M210 33h8v2h-8zM243 30h2v8h-2z"/><path fill="currentColor" d="M240 33h8v2h-8zM273 30h2v8h-2z"/><path fill="currentColor" d="M270 33h8v2h-8zM3 60h2v8H3z"/><path fill="currentColor" d="M0 63h8v2H0zM33 60h2v8h-2z"/><path fill="currentColor" d="M30 63h8v2h-8zM63 60h2v8h-2z"/><path fill="currentColor" d="M60 63h8v2h-8zM93 60h2v8h-2z"/><path fill="currentColor" d="M90 63h8v2h-8zM123 60h2v8h-2z"/><path fill="currentColor" d="M120 63h8v2h-8zM153 60h2v8h-2z"/><path fill="currentColor" d="M150 63h8v2h-8zM183 60h2v8h-2z"/><path fill="currentColor" d="M180 63h8v2h-8zM213 60h2v8h-2z"/><path fill="currentColor" d="M210 63h8v2h-8zM243 60h2v8h-2z"/><path fill="currentColor" d="M240 63h8v2h-8zM273 60h2v8h-2z"/><path fill="currentColor" d="M270 63h8v2h-8zM3 90h2v8H3z"/><path fill="currentColor" d="M0 93h8v2H0zM33 90h2v8h-2z"/><path fill="currentColor" d="M30 93h8v2h-8zM63 90h2v8h-2z"/><path fill="currentColor" d="M60 93h8v2h-8zM93 90h2v8h-2z"/><path fill="currentColor" d="M90 93h8v2h-8zM123 90h2v8h-2z"/><path fill="currentColor" d="M120 93h8v2h-8zM153 90h2v8h-2z"/><path fill="currentColor" d="M150 93h8v2h-8zM183 90h2v8h-2z"/><path fill="currentColor" d="M180 93h8v2h-8zM213 90h2v8h-2z"/><path fill="currentColor" d="M210 93h8v2h-8zM243 90h2v8h-2z"/><path fill="currentColor" d="M240 93h8v2h-8zM273 90h2v8h-2z"/><path fill="currentColor" d="M270 93h8v2h-8zM3 120h2v8H3z"/><path fill="currentColor" d="M0 123h8v2H0zM33 120h2v8h-2z"/><path fill="currentColor" d="M30 123h8v2h-8zM63 120h2v8h-2z"/><path fill="currentColor" d="M60 123h8v2h-8zM93 120h2v8h-2z"/><path fill="currentColor" d="M90 123h8v2h-8zM123 120h2v8h-2z"/><path fill="currentColor" d="M120 123h8v2h-8zM153 120h2v8h-2z"/><path fill="currentColor" d="M150 123h8v2h-8zM183 120h2v8h-2z"/><path fill="currentColor" d="M180 123h8v2h-8zM213 120h2v8h-2z"/><path fill="currentColor" d="M210 123h8v2h-8zM243 120h2v8h-2z"/><path fill="currentColor" d="M240 123h8v2h-8zM273 120h2v8h-2z"/><path fill="currentColor" d="M270 123h8v2h-8zM3 150h2v8H3z"/><path fill="currentColor" d="M0 153h8v2H0zM33 150h2v8h-2z"/><path fill="currentColor" d="M30 153h8v2h-8zM63 150h2v8h-2z"/><path fill="currentColor" d="M60 153h8v2h-8zM93 150h2v8h-2z"/><path fill="currentColor" d="M90 153h8v2h-8zM123 150h2v8h-2z"/><path fill="currentColor" d="M120 153h8v2h-8zM153 150h2v8h-2z"/><path fill="currentColor" d="M150 153h8v2h-8zM183 150h2v8h-2z"/><path fill="currentColor" d="M180 153h8v2h-8zM213 150h2v8h-2z"/><path fill="currentColor" d="M210 153h8v2h-8zM243 150h2v8h-2z"/><path fill="currentColor" d="M240 153h8v2h-8zM273 150h2v8h-2z"/><path fill="currentColor" d="M270 153h8v2h-8zM3 180h2v8H3z"/><path fill="currentColor" d="M0 183h8v2H0zM33 180h2v8h-2z"/><path fill="currentColor" d="M30 183h8v2h-8zM63 180h2v8h-2z"/><path fill="currentColor" d="M60 183h8v2h-8zM93 180h2v8h-2z"/><path fill="currentColor" d="M90 183h8v2h-8zM123 180h2v8h-2z"/><path fill="currentColor" d="M120 183h8v2h-8zM153 180h2v8h-2z"/><path fill="currentColor" d="M150 183h8v2h-8zM183 180h2v8h-2z"/><path fill="currentColor" d="M180 183h8v2h-8zM213 180h2v8h-2z"/><path fill="currentColor" d="M210 183h8v2h-8zM243 180h2v8h-2z"/><path fill="currentColor" d="M240 183h8v2h-8zM273 180h2v8h-2z"/><path fill="currentColor" d="M270 183h8v2h-8zM3 210h2v8H3z"/><path fill="currentColor" d="M0 213h8v2H0zM33 210h2v8h-2z"/><path fill="currentColor" d="M30 213h8v2h-8zM63 210h2v8h-2z"/><path fill="currentColor" d="M60 213h8v2h-8zM93 210h2v8h-2z"/><path fill="currentColor" d="M90 213h8v2h-8zM123 210h2v8h-2z"/><path fill="currentColor" d="M120 213h8v2h-8zM153 210h2v8h-2z"/><path fill="currentColor" d="M150 213h8v2h-8zM183 210h2v8h-2z"/><path fill="currentColor" d="M180 213h8v2h-8zM213 210h2v8h-2z"/><path fill="currentColor" d="M210 213h8v2h-8zM243 210h2v8h-2z"/><path fill="currentColor" d="M240 213h8v2h-8zM273 210h2v8h-2z"/><path fill="currentColor" d="M270 213h8v2h-8zM3 240h2v8H3z"/><path fill="currentColor" d="M0 243h8v2H0zM33 240h2v8h-2z"/><path fill="currentColor" d="M30 243h8v2h-8zM63 240h2v8h-2z"/><path fill="currentColor" d="M60 243h8v2h-8zM93 240h2v8h-2z"/><path fill="currentColor" d="M90 243h8v2h-8zM123 240h2v8h-2z"/><path fill="currentColor" d="M120 243h8v2h-8zM153 240h2v8h-2z"/><path fill="currentColor" d="M150 243h8v2h-8zM183 240h2v8h-2z"/><path fill="currentColor" d="M180 243h8v2h-8zM213 240h2v8h-2z"/><path fill="currentColor" d="M210 243h8v2h-8zM243 240h2v8h-2z"/><path fill="currentColor" d="M240 243h8v2h-8zM273 240h2v8h-2z"/><path fill="currentColor" d="M270 243h8v2h-8zM3 270h2v8H3z"/><path fill="currentColor" d="M0 273h8v2H0zM33 270h2v8h-2z"/><path fill="currentColor" d="M30 273h8v2h-8zM63 270h2v8h-2z"/><path fill="currentColor" d="M60 273h8v2h-8zM93 270h2v8h-2z"/><path fill="currentColor" d="M90 273h8v2h-8zM123 270h2v8h-2z"/><path fill="currentColor" d="M120 273h8v2h-8zM153 270h2v8h-2z"/><path fill="currentColor" d="M150 273h8v2h-8zM183 270h2v8h-2z"/><path fill="currentColor" d="M180 273h8v2h-8zM213 270h2v8h-2z"/><path fill="currentColor" d="M210 273h8v2h-8zM243 270h2v8h-2z"/><path fill="currentColor" d="M240 273h8v2h-8zM273 270h2v8h-2z"/><path fill="currentColor" d="M270 273h8v2h-8z"/></svg>
+              </div>
+
+              <!-- Card -->
+              <div class="card card-sm rounded-top-left rounded-bottom-right mb-10 mb-md-0">
+
+                <!-- Slider -->
+                <div data-flickity='{"asNavFor": "#testimonialsSlider", "fade": true, "draggable": false, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "wrapAround": true}'>
+                  <img class="card-img-top rounded-top-left" src="assets/img/hiring-agency/employee-header-1.jpg" alt="...">
+                  <img class="card-img-top rounded-top-left" src="assets/img/hiring-agency/employee-header-2.jpg" alt="...">
+                  <img class="card-img-top rounded-top-left" src="assets/img/hiring-agency/employee-header-3.jpg" alt="...">
+                </div>
+
+                <!-- SHAPE -->
+                <div class="position-relative">
+                  <div class="shape shape-fluid-x shape-top text-white">
+                    <div class="shape-img pb-7">
+                      <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+                        <path d="M0 25h25L75 0h25v50H0z" fill="currentColor"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slider -->
+                <div class="mt-n11" data-flickity='{"asNavFor": "#testimonialsSlider", "fade": true, "draggable": false, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "wrapAround": true}'>
+                  <div class="card-body w-100 pb-0 text-center">
+                    <div class="avatar avatar-xl">
+                      <img class="avatar-img rounded-circle border border-5 border-white" src="assets/img/avatars/avatar-1.jpg" alt="...">
+                    </div>
+                  </div>
+                  <div class="card-body w-100 pb-0 text-center">
+                    <div class="avatar avatar-xl">
+                      <img class="avatar-img rounded-circle border border-5 border-white" src="assets/img/avatars/avatar-2.jpg" alt="...">
+                    </div>
+                  </div>
+                  <div class="card-body w-100 pb-0 text-center">
+                    <div class="avatar avatar-xl">
+                      <img class="avatar-img rounded-circle border border-5 border-white" src="assets/img/avatars/avatar-3.jpg" alt="...">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slider -->
+                <div class="flickity-soft-edges flickity-soft-edges-white flickity-buttons-adjacent flickity-buttons-rounded flickity-buttons-bottom-center rounded-inherit" data-flickity='{"pageDots": false, "wrapAround": true}' id="testimonialsSlider">
+                  <div class="card-body w-100 pb-9 text-center">
+
+                    <!-- Blockquote -->
+                    <blockquote class="mb-5">
+                      <q class="font-size-lg">
+                        Tellement simple d'utilisation. Influencia a changé ma manière de gérer mon compte Instagram !
+                      </q>
+                    </blockquote>
+
+                    <!-- Heading -->
+                    <h4 class="font-family-sans-serif mb-0">Tanya</h4>
+
+                    <!-- Position -->
+                    <p class="font-size-sm text-muted mt-n1 mb-0">@tanyaburr</p>
+
+                  </div>
+                  <div class="card-body w-100 pb-9 text-center">
+
+                    <!-- Blockquote -->
+                    <blockquote class="mb-5">
+                      <q class="font-size-lg">
+                        Je ne peux plus m'en passer, la gestion de mon calendier est quelque chose qui m'aide tous les jours et facilite mes journées !
+                      </q>
+                    </blockquote>
+
+                    <!-- Heading -->
+                    <h4 class="font-family-sans-serif mb-0">Andre</h4>
+
+                    <!-- Position -->
+                    <p class="font-size-sm text-muted mt-n1 mb-0">@andre </p>
+
+                  </div>
+                  <div class="card-body w-100 pb-9 text-center">
+
+                    <!-- Blockquote -->
+                    <blockquote class="mb-5">
+                      <q class="font-size-lg">
+                        Entre mon agent, les différentes applications de programmation, et la gestion des campanges, je m'en sortais pas. Tout est plus simple maintenat !
+                      </q>
+                    </blockquote>
+
+                    <!-- Heading -->
+                    <h4 class="font-family-sans-serif mb-0">Danielle</h4>
+
+                    <!-- Position -->
+                    <p class="font-size-sm text-muted mt-n1 mb-0">@weworewhat</p>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-md-6 text-center text-md-left">
+
+            <!-- Heading -->
+            <h2 class="display-4 mb-4">
+              Une veritable révolution dans le monde de l'influence.
+            </h2>
+
+            <!-- Text -->
+            <p class="text-muted">
+              Influencia permet de rassembler tous les éléments primordiaux à la gestion d'un compte Instagram avec une interface simple d'utilisation et des fonctionnalités innovantes.
+            </p>
+
+            <!-- List -->
+            <ul class="list-checked list-checked-warning mb-0">
+              <li>Déjà 5k ifnluenceurs sur la plateforme</li>
+              <li>Des relations plus professionnelles</li>
+              <li>PDe nombreux annonceurs conquis</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- PRICING -->
+      <section class="pt-10 pt-md-12">
+        <div class="container-lg position-relative" style="z-index: 1;">
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8 text-center">
+
+              <!-- Divider -->
+              <hr class="hr-sm border-warning mb-10 mb-md-12">
+
+              <!-- Heading -->
+              <h2 class="display-3 mb-4">
+                Tarifs.
+              </h2>
+
+              <!-- Text -->
+              <p class="mb-9">
+                Inscrivez-vous maintenant et bénéficiez d'un essai gratuit d'1 mois.
+              </p>
+
+            </div>
+          </div>
+          <div class="row mt-n6">
+            <div class="col-lg-4">
+
+              <!-- Card -->
+              <div class="card rounded-top-left-lg rounded-bottom-right-lg mt-6">
+                <div class="card-body">
+
+                  <!-- Preheading -->
+                  <h6 class="text-center text-uppercase text-warning">
+                    Gratuit 1 mois.
+                  </h6>
+
+                  <!-- Price -->
+                  <p class="display-4 font-weight-bold text-center">
+                    <span class="font-size-h3 align-middle">€</span>
+                    <span class="mx-n2">0</span>
+                    <span class="font-size-h2 align-middle">/mo </span>
+                  </p>
+
+                  <!-- List -->
+                  <ul class="list-checked list-checked-warning">
+                    <li class="mb-3">
+                      Accès à toutes les fonctionnalités
+                    </li>
+                    <li class="mb-3">
+                      Gérer votre compte
+                    </li>
+                    <li>
+                      Gérez vos campagnes
+                    </li>
+                  </ul>
+
+                  <!-- Button -->
+                  <a class="btn btn-block btn-gray-300 shadow-none lift" href="Lien_redirection.html" target="_blank">
+                    Essayez gratuitement
+                  </a>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-4">
+
+              <!-- Card -->
+              <div class="card rounded-top-left-lg rounded-bottom-right-lg mt-6">
+                <div class="card-body">
+
+                  <!-- Preheading -->
+                  <h6 class="text-center text-uppercase text-warning">
+                    Multisite
+                  </h6>
+
+                  <!-- Price -->
+                  <p class="display-4 font-weight-bold text-center">
+                    <span class="font-size-h3 align-middle">€</span>
+                    <span class="mx-n2">29,99</span>
+                    <span class="font-size-h2 align-middle">/mo </span>
+                  </p>
+
+                  <!-- List -->
+                  <ul class="list-checked list-checked-warning">
+                    <li class="mb-3">
+                      Gestion de campagnes
+                    </li>
+                    <li class="mb-3">
+                      Programmation des publications
+                    </li>
+                    <li class="mb-3">
+                      Preview
+                    </li>
+                    <li>
+                      Agenda automatisé
+                    </li>
+                  </ul>
+
+                  <!-- Button -->
+                  <a class="btn btn-block btn-primary lift" href="Lien_redirection.html" target="_blank">
+                    Essayez gratuitement
+                  </a>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-4">
+
+              <!-- Card -->
+              <div class="card rounded-top-left-lg rounded-bottom-right-lg mt-6">
+                <div class="card-body">
+
+                  <!-- Preheading -->
+                  <h6 class="text-center text-uppercase text-warning">
+                    Extended
+                  </h6>
+
+                  <!-- Price -->
+                  <p class="display-4 font-weight-bold text-center">
+                    <span class="font-size-h3 align-middle">€</span>
+                    <span class="mx-n2">39,99</span>
+                    <span class="font-size-h2 align-middle">/mo </span>
+                  </p>
+
+                  <!-- List -->
+                  <ul class="list-checked list-checked-warning">
+                    <li class="mb-3">
+                      Accès à toutes les fonctionnalités
+                    </li>
+                    <li class="mb-3">
+                      Bénéficiez de conseils sur l'influence
+                    </li>
+                    <li class="mb-3">
+                      Boostez vos chances d'être vus
+                    </li>
+                    <li class="mb-3">
+                      Gérez de multiples campagnes
+                    </li>
+                  </ul>
+
+                  <!-- Button -->
+                  <a class="btn btn-block btn-gray-300 shadow-none lift" href="Lien_redirection.html" target="_blank">
+                    Essayez gratuitement
+                  </a>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-fluid-x shape-top text-dark pt-15">
+        <div class="shape-img pb-8 pb-md-12">
+          <svg viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M0 25h25L75 0h25v50H0z" fill="currentColor"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <section class="py-10 py-md-12 bg-dark">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-7">
+
+            <!-- Heading -->
+            <h2 class="display-4 text-center text-white mb-4">
+              Questions fréquentes.
+            </h2>
+
+            <!-- Text -->
+            <p class="text-center text-white-80 mb-9">
+              Trouvez des réponses à vos questions.
+            </p>
+
+            <!-- List group -->
+            <div class="list-group list-group-lg list-group-flush my-n7" id="faq">
+              <div class="list-group-item border-gray-900">
+
+                <!-- Heading -->
+                <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-white" data-toggle="collapse" href="Lien_redirection.html" role="button" aria-expanded="true" aria-controls="faqOne">
+                  Est-ce que je peux gérer plusieurs campagnes Instagram ?
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse show" id="faqOne" data-parent="#faq">
+                  <p class="text-white-80 mt-2 mb-0">
+                    Oui ! Influencia permet de gérer de nombreuses campagnes d'influence simultanées. L'agenda et la gestion des camapgnes pemettent de garder un oeil constamment sur les campagnes en cours.
+                  </p>
+                </div>
+
+              </div>
+              <div class="list-group-item border-gray-900">
+
+                <!-- Heading -->
+                <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-white" data-toggle="collapse" href="Lien_redirection.html" role="button" aria-expanded="false" aria-controls="faqTwo">
+                  Est-ce que je peux utiliser Influencia en dehors des campagnes d'influence ?
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse" id="faqTwo" data-parent="#faq">
+                  <p class="text-white-80 mt-2 mb-0">
+                    Oui ! L'agenda, la plannification des contenus et l'outils Preview permettent à tout influenceur de gérer son compte Instagram comme il le souhaite, même sans campagne d'influence !
+                  </p>
+                </div>
+
+              </div>
+              <div class="list-group-item border-gray-900">
+
+                <!-- Heading -->
+                <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-white" data-toggle="collapse" href="Lien_redirection.html" role="button" aria-expanded="false" aria-controls="faqThree">
+                  Est-ce que les conseils peuvent m'aider à gagner plus d'argent ?
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse" id="faqThree" data-parent="#faq">
+                  <p class="text-white-80 mt-2 mb-0">
+                    Nous avons une expertise dans le monde d'influence, nous pouvons vous conseiller afin de promouvoir au mieux votre compte Instagram et ainsi multiplier vos chances de réaliser des campagnes d'influence pour des annonceurs.
+                  </p>
+                </div>
+
+              </div>
+              <div class="list-group-item border-gray-900">
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer py-8 py-md-11 bg-dark border-top border-gray-900">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-md-4">
+
+            <!-- Brand -->
+            <h2 class="font-family-serif text-white mb-1">
+              Influencia
+            </h2>
+
+            <!-- Text -->
+            <p class="text-white-60">
+              Devenez votre propre agent.
+            </p>
+
+          </div>
+          <div class="col-6 col-md">
+
+            <!-- Heading -->
+            <a class="text-white-60" href="Lien_redirection.html"><h6 class="text-uppercase text-white mb-3 mb-md-5">
+              Qui sommes nous ?
+            </h6></a>
+
+          </div>
+          <div class="col-6 col-md">
+
+            <!-- Heading -->
+            <a class="text-white-60" href="Lien_redirection.html"><h6 class="text-uppercase text-white mb-3 mb-md-5">
+              Essayez gratuitement
+            </h6></a>
+
+          </div>
+          <div class="col-6 col-md">
+
+            <!-- Heading -->
+            <a class="text-white-60" href="Lien_redirection.html"><h6 class="text-uppercase text-white mb-3 mb-md-5">
+              Mentions légales
+            </h6></a>
+
+ 
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <!-- Polyfills -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.find,Array.prototype.includes,Array.from,Object.entries,Promise,Object.assign"></script>
+
+    <!-- Libs JS -->
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="assets/libs/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="assets/libs/aos/dist/aos.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="assets/libs/typed.js/lib/typed.min.js"></script>
+
+    <!-- Map -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
+
+    <!-- Theme JS -->
+    <script src="assets/js/theme.min.js"></script>
+
+
+  </body>
+</html>
